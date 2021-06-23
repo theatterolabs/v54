@@ -237,8 +237,7 @@ End of Ads-->
 	
 	</div>	
     <div id="fbLogin" class="fbLogin" style="display:block;">
-	  <!--<fb:login-button data-size="large" login_text="Login To Post Your Score" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
-	   -->
+	 
 	    <button class="loginBtn loginBtn--facebook" id="loginbtn" onclick="postScore();">Login To Post Your Score</button>
 
     </div>
@@ -249,9 +248,11 @@ End of Ads-->
   
   <div id="LbButton" class="LbButton" onclick="ig.game.showLeaderBoard(); autoPostScore(); tap();" style="display:none;"></div> 
   
-  
-  <!-- End Leader Board -->
-<button class="shareBtn shareBtn--facebook" id="fb-share" style="display:none;">Share Karo Dada!</button>
+  <span id="HighScore" class="HighScore" style="display:none;"></span>
+
+<div class="shareBtn" id="fb-share" style="display:none;"></div>
+	
+
 	
 
   </div>
