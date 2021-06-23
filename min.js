@@ -10036,26 +10036,26 @@ jukebox.Manager = function(e) {
                 
                  hideFbShare: function(){
                                 
-                                fbsh = document.getElementById("fb-share"),
-                                fbsh.style.display = "none",
-                                icnntxtta = document.getElementById("iconTexta"),
-                                icnntxtta.style.display = "none",        
-                                icnntxttb = document.getElementById("iconTextb"),
-                                icnntxttb.style.display = "none",
-                                icnntxttc = document.getElementById("iconTextc"),
-                                icnntxttc.style.display = "none"
+                                fbsh = document.getElementById("fb-share");
+                                fbsh.style.display = "none";
+                                icnntxtta = document.getElementById("iconTexta");
+                                icnntxtta.style.display = "none";        
+                                icnntxttb = document.getElementById("iconTextb");
+                                icnntxttb.style.display = "none";
+                                icnntxttc = document.getElementById("iconTextc");
+                                icnntxttc.style.display = "none";
                 },
                 
                  showFbShare: function(){
                                 
-                                fbss = document.getElementById("fb-share"),
-                                fbss.style.display = "block",
-                                icntxta = document.getElementById("iconTexta"),
-                                icntxta.style.display = "block", 
-                                icntxtb = document.getElementById("iconTextb"),
-                                icntxtb.style.display = "block", 
-                                icntxtc = document.getElementById("iconTextc"),        
-                                icntxtc.style.display = "block"        
+                                fbss = document.getElementById("fb-share");
+                                fbss.style.display = "block";
+                                icntxta = document.getElementById("iconTexta");
+                                icntxta.style.display = "block";
+                                icntxtb = document.getElementById("iconTextb");
+                                icntxtb.style.display = "block"; 
+                                icntxtc = document.getElementById("iconTextc");        
+                                icntxtc.style.display = "block";        
                                 
                 },
                 
