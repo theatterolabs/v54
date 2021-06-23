@@ -10037,14 +10037,18 @@ jukebox.Manager = function(e) {
                  hideFbShare: function(){
                                 
                                 fbsh = document.getElementById("fb-share"),
-                                fbsh.style.display = "none"
+                                fbsh.style.display = "none",
+                                icnntxtt = document.getElementById("iconText"),
+                                icnntxtt.style.display = "none"        
                                 
                 },
                 
                  showFbShare: function(){
                                 
                                 fbss = document.getElementById("fb-share"),
-                                fbss.style.display = "block"
+                                fbss.style.display = "block",
+                                icntxt = document.getElementById("iconText"),
+                                icntxt.style.display = "block"        
                                 
                 },
                 
