@@ -9765,17 +9765,19 @@ jukebox.Manager = function(e) {
                 ig.game.restartGameFlag = !1, 
                 this.gameEndTime = ig.system.clock.delta(),
                 ig.game.hideLeaderBoardButton(),
-                ig.game.hideFbShare(),        
+                ig.game.hideFbShare(),
+                ig.game.hideHighScore(),        
                 this.gameEnding = !0
             },
             finishGame: function() {
-                 ig.game.showLeaderBoardButton(), ig.game.showFbShare(), this.gameOver = !0, this.gameOverTime = ig.system.clock.delta(), ig.game.savePlayerStats(), ig.soundHandler.playSound(ig.soundHandler.SOUNDID.chirp)
+                 ig.game.showLeaderBoardButton(), ig.game.showFbShare(), ig.game.showHighScore(), this.gameOver = !0, this.gameOverTime = ig.system.clock.delta(), ig.game.savePlayerStats(), ig.soundHandler.playSound(ig.soundHandler.SOUNDID.chirp)
             },
             restartGame: function() {
                 ig.game.doTutorialFlag = !1,
                 ig.game.restartGameFlag = !0,
                 ig.game.hideLeaderBoardButton(),
-                ig.game.hideFbShare(),        
+                ig.game.hideFbShare(),
+                ig.game.hideHighScore(),        
                 this.gameEndTime = ig.system.clock.delta(), 
                 this.gameEnding = !0, MobileAdInGamePreroll.Initialize()
             },
@@ -10044,6 +10046,20 @@ jukebox.Manager = function(e) {
                                 
                                 fbss = document.getElementById("fb-share"),
                                 fbss.style.display = "block"
+                                
+                },
+                
+                 hideHighScore: function(){
+                                
+                                hisr = document.getElementById("HighScore"),
+                                hisr.style.display = "none"
+                                
+                },
+                
+                 showHighScore: function(){
+                                
+                                shhisr = document.getElementById("HighScore"),
+                                shhisr.style.display = "block"
                                 
                 },
                 
