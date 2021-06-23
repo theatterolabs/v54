@@ -66,14 +66,46 @@ FB.getLoginStatus((response) => {
   
 <script>
 	
+//https://e1qgd37uc2.execute-api.us-east-1.amazonaws.com/getScore
 	
   window.onload = chooseContextPic;
+	
+	
+	
+	
 
 var contextPic = new Array("media/graphics/splash/mobile/cover-start-1.jpg","media/graphics/splash/mobile/cover-start-2.jpg");
 
 function chooseContextPic() {
      var randomNum = Math.floor(Math.random() * contextPic.length);
      document.getElementById("contextScreen").src = contextPic[randomNum];
+	
+	/* Get Top Score */
+	
+	
+	scoreAPI = "https://e1qgd37uc2.execute-api.us-east-1.amazonaws.com/getScore";
+	
+
+				
+	fetch(scoreAPI).then(response => {
+					
+					return response.json();
+					
+				}).then(data => {
+					
+					var topScore = data[0].score;
+					console.log(topScore);
+					document.getElementById('HighScore').innerHTML = topScore;
+						
+ 
+				}).catch((error) => {
+
+					console.error('Error:', error);
+					
+				}); 
+
+	
+	/* End Get Top Score */
 }
 	
 
