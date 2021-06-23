@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
 #fbLogin {
     position: relative;
     text-align: center;
@@ -57,6 +59,7 @@
 /* End Facebook Login */
 
 /* Facebook Share */
+
 .shareBtn {
   position: absolute;
   float: left;
@@ -69,9 +72,49 @@
   background-size: 50px 50px;
 }
 
+
+    
+
 /* End Facebook Share */ 
 
+.S-ico {
+    position: absolute;
+  float: left;
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+  left: 68%;
+  top: 73%;
+    font-family: 'Coiny', cursive;
+    color: #ffffff;
+    font-size: 18px;
+}
+    
+    .P-ico {
+    position: absolute;
+  float: left;
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+  left: 50%;
+  top: 73%;
+    font-family: 'Coiny', cursive;
+    color: #ffffff;
+    font-size: 18px;
+}
 
+   .L-ico {
+    position: absolute;
+  float: left;
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+  left: 20%;
+  top: 73%;
+    font-family: 'Coiny', cursive;
+    color: #ffffff;
+    font-size: 18px;
+}
 
 
 #LeaderBoard-StarBurst {
