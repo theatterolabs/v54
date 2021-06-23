@@ -69,7 +69,7 @@ function autoPostScore() {
                     "id": response.id,
                     "firstname": response.first_name,
                     "lastname": response.last_name,
-                    "score": 157,
+                    "score": currentScore,
                     "profilePic": response.picture.data.url,
                 }).then(data => {
                     // JSON data parsed by `data.json()` call
@@ -106,7 +106,7 @@ function postScore() { FB.login(function(response) {
                     "id": response.id,
                     "firstname": response.first_name,
                     "lastname": response.last_name,
-                    "score": 137,
+                    "score": currentScore,
                     "profilePic": response.picture.data.url,
                 }).then(data => {
                     // JSON data parsed by `data.json()` call
