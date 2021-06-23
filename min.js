@@ -10038,24 +10038,24 @@ jukebox.Manager = function(e) {
                                 
                                 fbsh = document.getElementById("fb-share"),
                                 fbsh.style.display = "none",
-                                icnntxtt1 = document.getElementById("iconText1"),
-                                icnntxtt1.style.display = "none",        
-                                icnntxtt2 = document.getElementById("iconText2"),
-                                icnntxtt2.style.display = "none",
-                                icnntxtt3 = document.getElementById("iconText3"),
-                                icnntxtt3.style.display = "none"
+                                icnntxtta = document.getElementById("iconTexta"),
+                                icnntxtta.style.display = "none",        
+                                icnntxttb = document.getElementById("iconTextb"),
+                                icnntxttb.style.display = "none",
+                                icnntxttc = document.getElementById("iconTextc"),
+                                icnntxttc.style.display = "none"
                 },
                 
                  showFbShare: function(){
                                 
                                 fbss = document.getElementById("fb-share"),
                                 fbss.style.display = "block",
-                                icntxt1 = document.getElementById("iconText1"),
-                                icntxt1.style.display = "block", 
-                                icntxt2 = document.getElementById("iconText2"),
-                                icntxt2.style.display = "block", 
-                                icntxt3 = document.getElementById("iconText3"),        
-                                icntxt3.style.display = "block"        
+                                icntxta = document.getElementById("iconTexta"),
+                                icntxta.style.display = "block", 
+                                icntxtb = document.getElementById("iconTextb"),
+                                icntxtb.style.display = "block", 
+                                icntxtc = document.getElementById("iconTextc"),        
+                                icntxtc.style.display = "block"        
                                 
                 },
                 
